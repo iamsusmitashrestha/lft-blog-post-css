@@ -2,6 +2,7 @@
 
 :root {
   --blue: rgb(23, 159, 231);
+  --dark-blue: rgb(10, 108, 160);
   --purple: rgb(68, 76, 231);
   --dark-purple: rgb(7, 14, 149);
   --grey: rgb(245, 248, 255);
@@ -27,6 +28,7 @@ body {
 h1 {
   font-size: 48px;
   font-weight: 600;
+  text-align: center;
 }
 
 h2 {
@@ -37,7 +39,6 @@ h2 {
 header {
   position: fixed;
   width: 100%;
-  padding: 12px 20px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -47,6 +48,14 @@ header {
   font-weight: 500;
   max-width: 1024px;
   margin: 0 auto;
+  padding: 12px 20px;
+}
+
+.support-text {
+  color: var(--dark-grey);
+  text-align: center;
+  margin-bottom: 32px;
+  font-style: italic;
 }
 
 .desc {
@@ -56,7 +65,7 @@ header {
 
 main {
   padding: 12px 20px;
-  padding-top: 90px;
+  padding-top: 110px;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -85,6 +94,13 @@ img {
 
 a {
   color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--purple);
+  transition: 0.7s;
 }
 
 p {
@@ -165,7 +181,7 @@ button:hover {
 }
 
 footer {
-  background-color: var(--light-grey);
+  background-color: var(--grey);
   padding: 32px;
   text-align: center;
 }
